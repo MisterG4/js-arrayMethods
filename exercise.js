@@ -1,4 +1,6 @@
-/*An array is a datatype that lists values (collection of elements). Arrays are an efficent and scalable way to pass logically grouped data throughout an application. Arrays allow us to write applications that process collections of data of an undetermined or growing size.*/
+/*An array is a datatype that lists values (collection of elements). Arrays are an efficent and scalable way to pass
+/*logically grouped data throughout an application. Arrays allow us to write applications that process collections of
+/*data of an undetermined or growing size.*/
 
 /*Array methods allow you to do things to an existing array*/
 
@@ -13,6 +15,8 @@
 /*1. Mr. Bonner (aka the Red Rocket, the Red Mamba) doesn't belong in this class of Hall Of Famers. Remove this imposter immediately and assign it to a new variable named `notHof` Console.log this new variable as well as the original list.*/ 
 
 var hof = ["Jordan", "Bird", "Kobe", "Duncan", "Iverson", "Bonner"];
+var notHof = hof.pop();
+console.log(hof);
 
 
 
@@ -22,6 +26,8 @@ var hof = ["Jordan", "Bird", "Kobe", "Duncan", "Iverson", "Bonner"];
 
 var shoppingList = ["cool ranch doritos", "kings hawaiian sweet bread", "peanut butter oreos", "fruit loops cereal"];
 
+shoppingList.push("hendricks gin");
+console.log(shoppingList);
 
 
 
@@ -30,6 +36,8 @@ var shoppingList = ["cool ranch doritos", "kings hawaiian sweet bread", "peanut 
 /*3. Use the force, or in this case the reverse method to help Yoda make some sense with his motivational talk to the young Jedi interns.*/
 
 var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
+yoda.reverse();
+console.log(yoda);
 
 
 
@@ -38,6 +46,13 @@ var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
 /*4. People been lining up for hours to get the newest iphone release. Help manage the unruly crowd of privileged customers by serving them one at a time and assiging it to a variable named `nowServing`. Console.log this new variable as well as the waitList.*/
 
 var waitList = ["Chance the Rapper", "Khalid", "Tay-Tay", "Barry Manilow", "Piko Taro"];
+
+var nowServing = waitList.shift();
+
+console.log(nowServing);
+console.log(waitList);
+
+
 
 
 
