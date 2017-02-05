@@ -46,12 +46,9 @@ console.log(yoda);
 /*4. People been lining up for hours to get the newest iphone release. Help manage the unruly crowd of privileged customers by serving them one at a time and assiging it to a variable named `nowServing`. Console.log this new variable as well as the waitList.*/
 
 var waitList = ["Chance the Rapper", "Khalid", "Tay-Tay", "Barry Manilow", "Piko Taro"];
-
 var nowServing = waitList.shift();
 
-console.log(nowServing);
 console.log(waitList);
-
 
 
 
@@ -59,6 +56,11 @@ console.log(waitList);
 /*The array.unshift() adds one or more elements to the front of an array and returns the new length of the array*/
 
 /*5. Apparently, you didn't do a good job with crowd control in the previous exercise. Kanye just cut in front of everyone!. Add Kanye to the waitList array above. Console.log waitList*/
+
+
+waitList.unshift("Kanye");
+
+console.log(waitList)
 
 
 
@@ -69,7 +71,8 @@ array.splice(index, how many items to be removed)*/
 
 var testMenu = ["McPizza Burger", "McFly Burger", "McLinguine", "McChar-Siu Bau", "McChop-Chae", "McPancit"];
 
-
+testMenu.splice( 2 , 2)
+console.log(testMenu)
 
 /*=============================================================*/
 
@@ -82,7 +85,8 @@ var testMenu = ["McPizza Burger", "McFly Burger", "McLinguine", "McChar-Siu Bau"
 var westSide = ["Dre", "2Pac", "Snoop"];
 var eastSide = ["Biggie", "Diddy", "Craig Mack"];
 
-
+var oneLove = westSide.concat(eastSide);
+console.log(oneLove);
 
 /*The array.join() joins all the elements of an array into a string.*/
 
